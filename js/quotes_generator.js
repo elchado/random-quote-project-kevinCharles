@@ -24,7 +24,7 @@ function printQuote(){
 
 	var toDisplay = getRandomQuote();
 
-
+	// validate if the quotes matches certain properties and display the object only with the properties that are defined
 
 	if ( toDisplay.quote && toDisplay.source ) {
 	var quote =  '<p class="quote"> ' + toDisplay.quote + ' </p> ' + '<p class="source">' +  toDisplay.source ;
@@ -50,6 +50,7 @@ function printQuote(){
 	
 	
 }
+// Get the generated quote and apply innerHTML
 
 function toShow(quote) {
 
